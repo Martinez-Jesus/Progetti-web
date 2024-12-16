@@ -1,0 +1,72 @@
+:root{
+    --color-secondario-- :rgb(248, 249, 250);
+    --color-info-section--:rgb(80, 93, 106);
+    --color-footer--:rgb(74, 85, 98);
+    --color-icon-social--:rgb(99, 110, 121);
+    --color-p-info-section--:rgb(185, 190, 195);
+}
+h1, h2, h3, h4, h5{
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+}
+#header{ 
+    font-family: "Raleway", sans-serif;
+    font-weight:  bold;
+}
+#servizi-text{
+    font-size: 3.5rem;
+}
+#clients{
+    background-color: var(--color-secondario--);
+}
+#blackAndWhite{
+    filter: grayscale(100%);
+    transition: all 0.5s;
+}
+#blackAndWhite:hover{
+    filter: grayscale(0%);
+    transform: scale(110%);
+}
+#info{
+    background-color: var(--color-info-section--);
+    color: white;
+}
+#info p{
+    color: var(--color-p-info-section--);
+}
+#footer{
+    background-color: var(--color-footer--);
+}
+.filtro-oscuro{
+    filter: brightness(50%);
+}
+.items-element{
+    background-color: var(--color-secondario--);
+    padding: 1rem;
+}
+.text-items{
+    padding: 0.5rem;
+}
+.bi-twitter, .bi-facebook, .bi-instagram, .bi-skype, .bi-linkedin{
+    background-color: var(--color-icon-social--);
+}
+.carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 0.8rem; /* change width */
+    height: 0.8rem; /* change height */
+    padding: 0;
+    margin-right: 0.3rem;
+    margin-left: 0.rem;
+    cursor:pointer;
+    background-color: #ffffff;
+    background-clip: padding-box;
+    border: 0;
+    border-top: 1rem solid transparent;
+    border-bottom: 1rem solid transparent;
+    transition: opacity .10s ease;
+    border-radius: 100%;
+}
+.carousel-indicators .active {
+    background-color: rgb(1, 123, 254);
+}
