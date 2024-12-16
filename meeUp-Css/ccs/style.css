@@ -1,0 +1,390 @@
+*{
+    box-sizing: border-box;
+}
+
+
+/* REGOLE BASE */
+
+:root{
+    --button-color:rgb(221, 81, 56);
+    --color-hero:rgb(3, 107, 199);
+    --color-border-speakers:rgb(246, 246, 246);
+    --color-buy:rgb(252, 217, 59);
+    --color-nome:rgb(0, 0, 0);
+    --color-form:rgb(58, 58, 58);
+    --color-footer:rgb(41, 41, 41);
+}
+body{
+    font-family: "Dosis", sans-serif;
+    text-align: center;
+    font-style: normal;
+}
+button{
+    background-color: var(--button-color);
+    color: white;
+    border: none;
+    padding: 1.25rem;
+    border-radius: 5%;
+    font-weight: 600;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.main-menu{
+    display: none;
+}
+.container{
+    width: 85%;
+    margin: 0 auto;
+}
+.container h1{
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-top: 2rem;
+    padding-bottom: 1.25rem;
+}
+.logo{
+    width: 7rem;
+    padding-top: 1rem;
+    
+}
+
+/* HEADER */
+#main-header{
+    background-color: var(--color-hero);
+    padding-bottom: 3rem;
+}
+
+
+
+/* HERO */
+#hero{
+    background-color: var(--color-hero);
+    height: 100vh;
+    color: white;
+}
+.hero-image{
+    display: none;
+}
+.hero-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-text{
+    padding-top: 1rem;
+}
+.hero-text h1{
+    font-weight: 500;
+    font-size: 2rem;
+    
+}
+.hero-text p{
+    font-size: 1.15rem;
+}
+.data{
+    color: rgba(255, 255, 255, 0.603);
+    padding-top: 1rem;
+}
+.btnBuyTickets{
+    margin-top: 4rem;
+}
+
+
+/* INFO SECTION */
+.info-image{
+    font-size: 5rem;
+    color:var(--color-hero) ;
+}
+.info-text h1{
+    font-weight: 500;
+    font-size: 1.50rem;
+    margin-top: -1rem;
+    color: var(--color-nome);
+}
+.info-text p{
+    margin-top: -1.5rem;
+}
+.info-item{
+    padding-bottom: 4rem;
+}
+
+
+/* SPEAKERS SECTION */
+#speakers .container{
+    width: 100%;
+}
+.card-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card{
+    border: solid 0.1rem var(--color-border-speakers);
+    margin: 0.5rem;
+    padding: 1rem;
+}
+.card-image img{
+    width:8rem ;
+    padding-top: 2rem;
+}
+.card-text p {
+    margin-top: -1.5rem;
+    padding: 0.6rem;
+}
+.card-text h1 {
+    margin-top: -1rem;
+    color: var(--color-nome);
+}
+.card-social{
+    padding-bottom: 2rem;
+}
+.card-social i{
+    padding: 0.3rem;
+}
+
+
+/* BUY SECTION */
+#buy{
+    background-color: var(--color-buy);
+    padding-bottom: 2rem;
+}
+#buy .container h1{
+    margin-bottom: -1.5rem;
+    font-size: 2rem;
+}
+.promo h2{
+    color: var(--color-nome);
+    font-weight: 500;
+}
+.promo h3{
+    font-size: 5rem;
+    font-weight: 500;
+    color: rgb(221, 81, 56);
+    margin-top: 0 ;
+    margin-bottom: 0;
+}
+
+
+
+/* FORM SECTION */
+#form{
+    background-color:var(--color-form);
+    color: white;
+    display: flex;
+
+}
+
+
+/* Estilos para   
+los labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+  /* Estilos para los inputs */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+  /* Estilos para el botón */
+button[type="submit"] {
+    background-color: rgb(184, 161, 63);
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    
+}
+
+
+/* FOOTER SECTION */
+.main-footer{
+    background-color: var(--color-footer);
+    display: flex;
+}
+.footer-rights h1{
+    font-size: 1rem;
+    color: white;
+}
+.footer-info ul { 
+    margin: 0;
+    padding: 0;
+    
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    column-gap: 1.5rem;
+    padding-bottom: 2rem;
+}
+.footer-info a{
+    text-decoration: none;
+    color: rgb(255, 195, 0);
+}
+
+/* REGOLE PER SCHERMI GRANDI */
+@media screen and (min-width: 992px){
+
+    #info .container h4, #speakers .container h4{
+        font-size: 1.5rem;
+        font-weight: 400;
+        padding-bottom: 1rem;
+        padding-top: 0.5rem;
+    }
+    
+    /* HEADER SECTION */
+    .main-menu{
+        display: block;
+    }
+    .header-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .main-menu ul { 
+        margin: 0;
+        padding: 0;
+        
+        display: flex;
+        list-style-type: none;
+        column-gap: 1.5rem;
+    }
+    .main-menu a{
+        text-decoration: none;
+        color: rgb(255, 195, 0);
+    }
+
+    
+    /* HERO SECTION */
+    .hero-image{
+        display: block;
+        width: 36.5%;
+        padding-top: 3rem;
+    }
+    .hero-text{
+        text-align: left;
+        width: 63.5%;
+    }
+
+
+
+    /* INFO SECTION */
+    .info-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 4rem;
+    }
+    .info-image{
+        font-size: 3rem;
+    }
+    .info-text h1{
+        font-size: 1rem;
+    }
+    .info-text p{
+        font-size: 0.8rem;
+    }
+    
+
+    /* SPEAKERS SECTION */
+    #speakers .container{
+        width: 90%;
+    }
+    .speakers-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .card{
+        width: 30%;
+
+    }
+    .card-image img{
+        width: 5rem;
+    }
+    .card-text p {
+        font-size: 0.8rem;
+    }
+    .card-text h1{
+        font-size: 1rem;
+    }
+    .card-social{
+        font-size: 0.6rem;
+        padding-top: 0.5rem;
+        
+    }
+
+
+    /* BUY SECTION */
+    .buy-wrapper{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .promo h2{
+        font-size: 0.8rem;
+    }
+    .promo h3{
+        font-size: 2rem;
+    }
+    .promo p{
+        font-size: 0.8rem;
+    }
+    #buy .container h1{
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    /* FORM SECTION */
+    .form-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 12rem;
+    }
+    .contact{
+        width: 50%;
+        /* padding: 4rem; */
+    }
+    .twitter{
+        width: 50%;
+        /* padding: 2rem; */
+
+    }
+    #form {
+        font-size: 0.8rem;
+        padding-bottom: 1rem;
+    }
+    #form .contact h1{
+        padding-bottom: 0rem;
+        
+    }
+    .btnSend{
+        display: flex;
+        justify-content: end;
+    }
+    
+
+    /* FOOTER SECTION */
+    .footer-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 0.7rem;
+    }
+    .footer-rights h1{
+        font-size: 0.7rem;
+    }
+    .footer-info ul{
+        padding-bottom: 0;
+    }
+}
