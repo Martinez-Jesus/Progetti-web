@@ -71,6 +71,11 @@ body{
 .filtro-blur{
     backdrop-filter: blur(20px) !important;
 }
+/* Oculta la barra de desplazamiento en WebKit (Chrome, Safari, Edge) */
+.noScrollBar::-webkit-scrollbar {
+    display: none !important;
+}
+
 
 @media screen and (min-width:700px){
     .transition{
